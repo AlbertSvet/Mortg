@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap&subset=cyrillic-ext');
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+.page {
+  flex: 1 1 auto;
+
+}
+
+
+._container {
+	max-width: 1260px;
+	margin: 0px auto;
+	padding: 0px 10px 0px 10px;
+	@media (max-width: 1130px) {
+		max-width: 950px;
+	}
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}

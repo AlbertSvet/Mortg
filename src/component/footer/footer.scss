@@ -1,0 +1,138 @@
+.footer {
+    padding: 20px 0px 35px 0px;
+    background: rgb(18, 104, 147);
+    // .footer__container
+
+    &__container {}
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 21px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+       
+
+    }
+
+    // .footer__logo
+
+    &__logo {}
+
+    // .footer__btn
+
+    &__btn {
+        padding: 18px 32px;
+        border-radius: 4px;
+        background-color: rgba(83, 133, 158, 0.5);
+        transition: all 0.2s ease 0s;
+        &:hover{           
+            background-color: rgba(83, 133, 158, 1);
+        }
+        font-family: Roboto;
+        color: whitesmoke;    
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        
+    }
+    
+
+		// .footer__polic
+
+		&__polic {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 24px;
+             padding-top: 42px;
+        }
+
+}
+
+// body
+
+.footer {
+
+    // .footer__body
+
+    &__body {
+        padding-top: 35px;
+        padding-bottom: 56px;
+        display: flex;
+        gap: 105px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    }
+
+    // .footer__item-block
+
+    &__item-block {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__item
+
+    &__item {
+        flex: 0 1 50%;
+    }
+
+    // .footer__list
+
+    &__list {}
+
+    // .footer__li
+
+    &__li {
+        margin-bottom: 16px;
+       
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        a{
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            opacity: 0.7;
+            transition: all 0.2s ease 0s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        
+       
+        &--title{
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+            margin-bottom: 24px;
+        }
+    }
+
+  
+
+    // .footer__text
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-bottom: 24px;
+        opacity: .7;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
