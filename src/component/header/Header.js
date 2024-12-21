@@ -14,19 +14,17 @@ class Header extends Component{
             active: !active
         }))
     }
-    // changDocumentClass = (e) =>{
-    //     if(e.target.classList.contains('header__menu')){ 
-    //         return null
-    //     }else{
-    //         this.setState({
-    //             active: false
-    //         })
-    //     }
-    // }
-    // componentDidMount() {
-    //         document.addEventListener('click', this.changDocumentClass)
+    changDocumentClass = (e) =>{
+        if(!e.target.closest('.header__menu')){ 
+            this.setState({
+                active: false
+            })
+        }
+    }
+    componentDidMount() {
+            document.addEventListener('click', this.changDocumentClass)
        
-    // }
+    }
     // componentWillUnmount() {
     //     document.removeEventListener('click', this.changDocumentClass)
     // }
