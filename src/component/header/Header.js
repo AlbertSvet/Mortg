@@ -25,9 +25,9 @@ class Header extends Component{
             document.addEventListener('click', this.changDocumentClass)
        
     }
-    // componentWillUnmount() {
-    //     document.removeEventListener('click', this.changDocumentClass)
-    // }
+    componentWillUnmount() {
+        document.removeEventListener('click', this.changDocumentClass)
+    }
     render() {
         const{active} = this.state
         const body = document.querySelector('body')
