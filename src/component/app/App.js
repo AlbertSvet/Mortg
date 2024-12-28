@@ -1,17 +1,17 @@
 import './App.scss';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import { Header, Footer, Finding } from '../page';
+
 function App() {
   return (
     <div className="wrapper">
       
-          <Header/>
-        
+        <Header/>        
          
 
         <main className='page'>
-            Контент
+            <Finding/>
         </main>
+
 
         <Footer/>
         
