@@ -1,0 +1,55 @@
+{
+    "mentors": [
+      {
+        "title": "The master mind",
+        "name": "Meet Justin",
+        "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+        "videoUrl": "https://www.youtube.com/watch?v=c-8uBItR9CI",
+        "thumbs": "./images/person1.png",
+        "skills": [
+          {
+            "name": "Deals",
+            "icon": "path/to/icon1.png"
+          },
+          {
+            "name": "Communication",
+            "icon": "path/to/icon2.png"
+          }
+        ]
+      },
+      {
+        "title": "The Educator",
+        "name": "Meet Scott",
+        "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+        "videoUrl": "https://www.youtube.com/watch?v=YTse_rEFiXo",
+        "thumbs": "./images/person2.png",
+        "skills": [
+          {
+            "name": "Deals",
+            "icon": "path/to/icon1.png"
+          },
+          {
+            "name": "Communication",
+            "icon": "path/to/icon2.png"
+          }
+        ]
+      },
+      {
+        "title": "The Innovator",
+        "name": "Jane",
+        "text": "Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
+        "videoUrl": "https://example.com/video.mp4",
+        "skills": [
+          {
+            "name": "Leadership",
+            "icon": "path/to/icon3.png"
+          },
+          {
+            "name": "Problem Solving",
+            "icon": "path/to/icon4.png"
+          }
+        ]
+      }
+    ]
+  }
+  

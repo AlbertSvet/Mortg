@@ -1,5 +1,5 @@
 import { useRef, useEffect,useState} from "react"
-
+import Preload from './Bitmap.png';
 const Player = ({videoId,getDuratiom}) =>{
     const playerRef = useRef(null)
     const [videoDuration, setDuration] = useState(null);
@@ -7,14 +7,8 @@ const Player = ({videoId,getDuratiom}) =>{
     useEffect(() =>{
         window.onYouTubeIframeAPIReady = () =>{
          const player = new window.YT.Player(playerRef.current,{
-                height: "100%",
-                width: "100%",
-                videoId: videoId,
-                playerVars: {
-                    autoplay: 1,
-                    controls: 0,
-                    rel: 0,
-                  },
+               
+                videoId: videoId,               
                   events: {
                     onReady: () =>{
                         const duration = player.getDuration();
@@ -30,10 +24,13 @@ const Player = ({videoId,getDuratiom}) =>{
         }
         getDuratiom(videoDuration);
 
-    },[])
+    },[videoDuration])
     
     return(
-        <div class='Finding__play-video' ref={playerRef}></div>
+        <div class='Finding__play-video'>
+            <div class='Finding__video' ref={playerRef}></div>
+            <img src={Preload} alt="" />
+        </div>
     )
 }
 

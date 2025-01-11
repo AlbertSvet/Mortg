@@ -1,14 +1,19 @@
 import './Finding.scss';
-import Preload from './Bitmap.png';
 import Player from '../player/Player';
+import { BtnAnimation } from '../page';
 import { useState } from 'react';
 const Finding = () =>{
     const [duration, setDuration] = useState(null)
-
     const getDuratiom = (dur) =>{
         setDuration(dur)
     }
-    
+    const formatDuration = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+    };
+
+    const newFormat = formatDuration(duration)
     return (
         <section class='Finding'>
             <div class='Finding__container _container'>
@@ -16,15 +21,15 @@ const Finding = () =>{
                     <div class='Finding__item-video'>
                         <Player 
                         getDuratiom = {getDuratiom}
-                        videoId='FmzHq3U0UFE'/>
+                        videoId='SegcMrEB8yA'/>
                         <div class='Finding__block-play'>
                             <h4 class='Finding__video-title'>Why a mortgage is so much more 
                             than just a rate?</h4>
                             <div class='Finding__item-play'>
-                                <button class='Finding__play'>
-                                    <div class='Finding__circle'></div>
-                                </button>
-                                <span class='Finding__sec'>{duration}</span>
+                                
+                                <BtnAnimation link={'https://www.youtube.com/watch?v=SegcMrEB8yA'}/>
+                                
+                                <span class='Finding__sec'>{newFormat}</span>
                             </div>
                         </div>
                     </div>
