@@ -9,11 +9,19 @@
         "skills": [
           {
             "name": "Deals",
-            "icon": "path/to/icon1.png"
+            "icon": "/images/icons_person1/Deals.svg"
           },
           {
-            "name": "Communication",
-            "icon": "path/to/icon2.png"
+            "name": "Find the right way",
+            "icon": "/images/icons_person1/compass.svg"
+          },
+          {
+            "name": "Mortgage «database»",
+            "icon": "/images/icons_person1/database.svg"
+          },
+          {
+            "name": "Docs master",
+            "icon": "/images/icons_person1/Docs_master.svg"
           }
         ]
       },
@@ -25,13 +33,22 @@
         "thumbs": "./images/person2.png",
         "skills": [
           {
-            "name": "Deals",
-            "icon": "path/to/icon1.png"
+            "name": "Linguist",
+            "icon": "/images/icons_person2/Linguist.svg"
           },
           {
-            "name": "Communication",
-            "icon": "path/to/icon2.png"
+            "name": "Linguist",
+            "icon": "/images/icons_person2/home.svg"
+          },
+          {
+            "name": "Linguist",
+            "icon": "/images/icons_person2/Helper.svg"
+          },
+          {
+            "name": "Linguist",
+            "icon": "/images/icons_person2/guru.svg"
           }
+          
         ]
       },
       {
