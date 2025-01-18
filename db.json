@@ -1,72 +1,93 @@
 {
-    "mentors": [
-      {
-        "title": "The master mind",
-        "name": "Meet Justin",
-        "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
-        "videoUrl": "https://www.youtube.com/watch?v=c-8uBItR9CI",
-        "thumbs": "./images/person1.png",
-        "skills": [
-          {
-            "name": "Deals",
-            "icon": "/images/icons_person1/Deals.svg"
-          },
-          {
-            "name": "Find the right way",
-            "icon": "/images/icons_person1/compass.svg"
-          },
-          {
-            "name": "Mortgage «database»",
-            "icon": "/images/icons_person1/database.svg"
-          },
-          {
-            "name": "Docs master",
-            "icon": "/images/icons_person1/Docs_master.svg"
-          }
-        ]
-      },
-      {
-        "title": "The Educator",
-        "name": "Meet Scott",
-        "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
-        "videoUrl": "https://www.youtube.com/watch?v=YTse_rEFiXo",
-        "thumbs": "./images/person2.png",
-        "skills": [
-          {
-            "name": "Linguist",
-            "icon": "/images/icons_person2/Linguist.svg"
-          },
-          {
-            "name": "Linguist",
-            "icon": "/images/icons_person2/home.svg"
-          },
-          {
-            "name": "Linguist",
-            "icon": "/images/icons_person2/Helper.svg"
-          },
-          {
-            "name": "Linguist",
-            "icon": "/images/icons_person2/guru.svg"
-          }
-          
-        ]
-      },
-      {
-        "title": "The Innovator",
-        "name": "Jane",
-        "text": "Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
-        "videoUrl": "https://example.com/video.mp4",
-        "skills": [
-          {
-            "name": "Leadership",
-            "icon": "path/to/icon3.png"
-          },
-          {
-            "name": "Problem Solving",
-            "icon": "path/to/icon4.png"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "mentors": [
+    {
+      "title": "The master mind",
+      "name": "Meet Justin",
+      "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+      "videoUrl": "https://www.youtube.com/watch?v=c-8uBItR9CI",
+      "thumbs": "./images/person1.png",
+      "skills": [
+        {
+          "name": "Deals",
+          "icon": "/images/icons_person1/Deals.svg"
+        },
+        {
+          "name": "Find the right way",
+          "icon": "/images/icons_person1/compass.svg"
+        },
+        {
+          "name": "Mortgage «database»",
+          "icon": "/images/icons_person1/database.svg"
+        },
+        {
+          "name": "Docs master",
+          "icon": "/images/icons_person1/Docs_master.svg"
+        }
+      ],
+      "id": "a829"
+    },
+    {
+      "title": "The Educator",
+      "name": "Meet Scott",
+      "text": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+      "videoUrl": "https://www.youtube.com/watch?v=YTse_rEFiXo",
+      "thumbs": "./images/person2.png",
+      "skills": [
+        {
+          "name": "Linguist",
+          "icon": "/images/icons_person2/Linguist.svg"
+        },
+        {
+          "name": "Linguist",
+          "icon": "/images/icons_person2/home.svg"
+        },
+        {
+          "name": "Linguist",
+          "icon": "/images/icons_person2/Helper.svg"
+        },
+        {
+          "name": "Linguist",
+          "icon": "/images/icons_person2/guru.svg"
+        }
+      ],
+      "id": "8a82"
+    },
+    {
+      "title": "The Innovator",
+      "name": "Jane",
+      "text": "Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.",
+      "videoUrl": "https://example.com/video.mp4",
+      "skills": [
+        {
+          "name": "Leadership",
+          "icon": "path/to/icon3.png"
+        },
+        {
+          "name": "Problem Solving",
+          "icon": "path/to/icon4.png"
+        }
+      ],
+      "id": "5aef"
+    }
+  ],
+  "story":[
+    {
+      "id": "01",
+      "title": "Get positioned",
+      "text": "Structure, pre-approval, gathering, put them into the position get the offer accepted.",
+      "active": false
+    },
+    {
+      "id": "02",
+      "title": "Prep the offer",
+      "text": "Terms of your offer, how quickly you can turn things around and who your lenders is advising.",
+      "active": true
+    },
+    {
+      "id": "03",
+      "title": "Finalize Closing",
+      "text": "Put the final touches on from contract to close. Close the deal.",
+      "active": false
+    }
+  ]
+}

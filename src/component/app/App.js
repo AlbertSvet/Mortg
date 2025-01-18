@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Footer, Finding, Getting } from '../page';
+import { Header, Footer, Finding, Getting, Story} from '../page';
 
 function App() {
   return (
@@ -21,6 +21,20 @@ function App() {
               </div>
             </section>
             
+            <section class='story'>
+              <div class='story__container _container'>
+                <h2 class='story__title'>Your mortgage journey is a story...</h2>
+                <h3 class='story__subTitle'>It’s not just about clicking a button.</h3>
+
+                <div class='story__main'>
+                    <div class='story__left-item'>
+                          <Story/>
+                    </div>
+                    <div class='story__right-item'></div>
+                </div>
+
+              </div>
+            </section>
         </main>
 
 

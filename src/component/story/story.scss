@@ -1,0 +1,117 @@
+.story {
+    padding-top: 104px;
+    // .story__container
+
+    &__container {}
+
+    // .story__title
+
+    &__title {
+        color: rgb(52, 47, 69);
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+     
+    }
+
+    // .story__subTitle
+
+    &__subTitle {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        opacity: 0.5;
+    }
+
+    // .story__main
+
+    &__main {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: minmax(300px, 380px) 1fr;
+        grid-column-gap: 65px;
+    }
+
+    // .story__left-item
+
+    &__left-item {}
+
+    // .story__right-item
+
+    &__right-item {}
+}
+
+.story {
+
+    // .story__item
+
+    &__item {
+        padding: 28px 40px;
+        border: 1px solid rgb(234, 234, 234);
+        border-radius: 4px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &.active{
+            background: rgb(39, 143, 180);
+            .story__item-title{
+                color: white;
+            }
+            .story__item-text{
+                color: white;
+            }
+            .story__span{
+                color: white;
+            }
+        }        
+    }
+
+    &__span{
+        color: rgb(39, 143, 180);
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+        letter-spacing: 2px;       
+        text-transform: uppercase;
+    }
+
+    // .story__item-title
+
+    &__item-title {
+        color: rgb(52, 47, 69);
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 17px;
+        margin-top: 10px;
+        &::before{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 40px;
+            background-color: rgb(151, 151, 151,0.5);
+        }
+    }
+
+    // .story__item-text
+
+    &__item-text {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        opacity: 0.5;
+    }
+}

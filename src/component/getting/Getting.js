@@ -9,16 +9,14 @@ const Getting = () =>{
     const data = new Server();
 
     useEffect(()=>{        
-        data.getData()
+        data.getData('mentors')
          .then(res => setData(res))
          .catch(er => console.log(er))
     },[])
 
-    console.log(result)
     
     return(
-        <View result={result}/>
-        
+        <View result={result}/>        
     )
 }
 
@@ -26,7 +24,7 @@ const View = ({result}) =>{
         
             const element = result.map((item,i) =>{
                 const {name,videoUrl,thumbs,title,text,skills } = item
-                const nameAvtor = item.name.split(' ').slice(-1)
+                const nameAvtor = name.split(' ').slice(-1)
                 
                 return(
                     <div class='getting__item' key={i}>
