@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Footer, Finding, Getting, Story} from '../page';
+import { Header, Footer, Finding, Getting, Story, StoryVideo, BtnAnimation} from '../page';
 
 function App() {
   return (
@@ -30,7 +30,30 @@ function App() {
                     <div class='story__left-item'>
                           <Story/>
                     </div>
-                    <div class='story__right-item'></div>
+                    <div class='story__right-item'>
+
+                      <div class='story__top-item'>
+                        <StoryVideo>
+                          <BtnAnimation/>
+                            <p>The difference between «fixed rate»
+                            and «adjustable»</p>
+                        </StoryVideo>
+                      </div>
+                      <div class='story__grid-item'>
+                      <StoryVideo>
+                        <BtnAnimation/>
+                            <p>What are points and credits?</p>
+                        </StoryVideo>
+                      </div>
+                      <div class='story__grid-item'>
+                      <StoryVideo>
+                          <BtnAnimation/>
+                            <p>What are points</p>
+                        </StoryVideo>
+                      </div>
+                        
+                       
+                    </div>
                 </div>
 
               </div>

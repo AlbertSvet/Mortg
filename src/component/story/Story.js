@@ -16,14 +16,10 @@ const Story = () =>{
     const getId = (id) =>{
         setStoryItem((prev) =>{
             return(
-                prev.map((item,i) =>{
-                    if(i === id) {
-                       return {...item, active:!false}
-                    }else{
-                        return item
-                    }
-                    
-             })
+                prev.map((item,i) =>({
+                ...item, 
+                active: i===id
+             }))
             )
              
         })

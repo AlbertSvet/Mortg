@@ -37,11 +37,32 @@
 
     // .story__left-item
 
-    &__left-item {}
+    &__left-item {
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -30px;
+            width: 1px;
+            height: 428px;
+            border: 1px dashed black;
+            opacity: 0.2;
+        }
+    }
 
     // .story__right-item
 
-    &__right-item {}
+    &__right-item {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 24px;
+    }
+    &__top-item{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 
 .story {
@@ -54,10 +75,41 @@
         border-radius: 4px;
         margin-bottom: 24px;
         cursor: pointer;
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 50%;
+            left: -36px;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgb(39, 143, 180);
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid rgb(204, 204, 204);
+            background: rgb(255, 255, 255);
+        }
         &:last-child{
             margin-bottom: 0px;
         }
         &.active{
+            &::after{
+                content:'';
+                
+                opacity: 1;
+            }
             background: rgb(39, 143, 180);
             .story__item-title{
                 color: white;
@@ -115,3 +167,54 @@
         opacity: 0.5;
     }
 }
+
+// Video block
+
+.story {
+
+    // .story__video-item
+
+    &__video-item {
+        max-height: 400px;
+        height: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            object-fit: cover;
+            max-height: 100%;
+        }
+    }
+
+    // .story__controll
+
+    &__controll {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        p{
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+           margin-top: 12px;
+           margin-bottom: 25px;
+        }
+    }
+
+    // .story__time
+
+    &__time {
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        
+    }
+}
+
+
+
