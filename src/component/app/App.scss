@@ -14,7 +14,23 @@
   flex: 1 1 auto;
 
 }
+// блоки
+.title{
+	color: rgb(52, 47, 69);
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 60px;
+}
 
+.sub-title{
+	color: rgb(0, 0, 0);
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	opacity: 0.5;
+}
 
 ._container {
 	max-width: 1260px;

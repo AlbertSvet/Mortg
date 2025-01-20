@@ -5,5 +5,6 @@ import Getting from "../getting/Getting";
 import BtnAnimation from "../btnAnim/BtnAnimation";
 import Story from "../story/Story";
 import StoryVideo from "../story-video/StoryVideo";
+import Rating from "../rating/Rating";
 
-export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo}
+export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating}

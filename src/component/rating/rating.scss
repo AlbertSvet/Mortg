@@ -1,0 +1,149 @@
+.customers {
+    padding-top: 96px;
+    // .customers__container
+
+    &__container {}
+
+    // .customers__title
+
+    &__title {
+       
+        
+    }
+
+    // .customers__subtitle
+
+    &__subtitle {
+      
+        
+    }
+
+    // .customers__grid
+
+    &__grid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: minmax(240px, 290px) 1fr;
+        grid-column-gap: 34px;
+    }
+
+    // .customers__rating-block
+
+    &__rating-block {}
+
+    // .customers__slider
+
+    &__slider {}
+}
+
+// карточка бренда 
+
+.customers {
+
+    // .customers__item
+
+    &__item {
+        border: 1px solid rgb(151, 151, 151,0.2);
+        border-radius: 4px;
+        display: grid;
+        grid-template-columns: 1fr 42px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    // .customers__description
+
+    &__description {
+        padding: 24px 24px;
+        span{
+            color: rgb(39, 143, 180);
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 13px;
+            letter-spacing: 2px;     
+            text-transform: uppercase;
+        }
+    }
+
+    // .customers__subtitle-star
+
+    &__subtitle-star {}
+
+    // .customers__brand
+
+    &__brand {
+        color: rgb(52, 47, 69);
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+       margin-top: 10px;
+    }
+
+    // .customers__line
+
+    &__line {
+        border-bottom: 1px solid rgb(151, 151, 151);
+        opacity: 0.2;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    // .customers__quantity
+
+    &__quantity {
+        color: rgb(0, 0, 0,0.5);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      
+    }
+
+    // .customers__border
+
+    &__border {
+      position: relative;
+      &::before{
+        content:'';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(39, 143, 180);
+      }
+    }
+
+    // .customers__star
+
+    &__star {
+        padding: 16px 12px;
+        border-left: 1px solid rgb(151, 151, 151,0.2);
+       
+        
+    }    
+
+    // .customers__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    // .customers__li
+
+    &__li {
+        transition: all 0.1s ease 0s;
+        &:hover{
+            transform: scale(0.7);
+        }
+    }
+}
+
+
