@@ -1,6 +1,5 @@
 import './App.scss';
-import { Header, Footer, Finding, Getting, Story, StoryVideo, BtnAnimation,Rating} from '../page';
-
+import { Header, Footer, Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider} from '../page';
 function App() {
   return (
     <div className="wrapper">
@@ -69,7 +68,16 @@ function App() {
                       <Rating/>
                   </div>
 
-                  <div class='customers__slider'></div>
+                  <div class='customers__slider'>
+                    {/* <div class='customers__itemTwo'>
+                        <div class='customers__pagin'>123</div>
+                        <div class='customers__block-btn'>
+                          <button class='customers__left' type='button'>+</button>
+                          <button class='customers__right' type='button'>-</button>
+                        </div>
+                    </div> */}
+                      <Slider/>
+                  </div>
                 </div>
                 
               </div>

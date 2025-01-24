@@ -6,5 +6,6 @@ import BtnAnimation from "../btnAnim/BtnAnimation";
 import Story from "../story/Story";
 import StoryVideo from "../story-video/StoryVideo";
 import Rating from "../rating/Rating";
+import Slider from "../slider/Slider";
 
-export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating}
+export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating,Slider}

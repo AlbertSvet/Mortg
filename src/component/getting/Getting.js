@@ -9,7 +9,7 @@ const Getting = () =>{
     const data = new Server();
 
     useEffect(()=>{        
-        data.getData('mentors')
+        data.getData('http://localhost:5000/mentors')
          .then(res => setData(res))
          .catch(er => console.log(er))
     },[])

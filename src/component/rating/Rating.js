@@ -1,6 +1,7 @@
 import './rating.scss';
 import Star from './star.svg';
 import HalfStar from './half_star.svg';
+import NoneStar from './none_star.svg';
 
 const Rating = () =>{
     const dataRating = [
@@ -8,11 +9,17 @@ const Rating = () =>{
             name: 'Google',
             reviews: 85,
             stars: 4.5,
+            iconStar: Star,
+            halfStar: HalfStar,
+            
         },
         {
             name: 'Zillow',
             reviews: 22,
-            stars: 4
+            stars: 4,
+            iconStar: Star,
+            halfStar: HalfStar,
+            noneStar: NoneStar
         },
     ]
    
@@ -23,27 +30,27 @@ const Rating = () =>{
 }
 
 const View = ({data}) =>{
-    const ratingData = [];
+    // const ratingData = [];
 
-    for(let i = 0; i < 5; i++){        
+    // for(let i = 0; i < 5; i++){        
        
-        if(i !== 4){
-            ratingData.push( 
-                <li class='customers__li' key={i}>
-                    <img src={Star} alt="star" />
-                </li>
-                )
-        }else{
-            ratingData.push( 
-                <li class='customers__li' key={i}>
-                    <img src={HalfStar} alt="star" />
-                </li>
-                )
-        }
+    //     if(i !== 4){
+    //         ratingData.push( 
+    //             <li class='customers__li' key={i}>
+    //                 <img src={Star} alt="star" />
+    //             </li>
+    //             )
+    //     }else{
+    //         ratingData.push( 
+    //             <li class='customers__li' key={i}>
+    //                 <img src={HalfStar} alt="star" />
+    //             </li>
+    //             )
+    //     }
         
-    }
+    // }
     const element = data.map((item,i)=>{
-        const {name, reviews,stars} = item
+        const {name, reviews,stars,iconStar,halfStar,noneStar} = item
         return(
             <div class='customers__item' key={i}>
                 <div class='customers__description'>
@@ -58,19 +65,22 @@ const View = ({data}) =>{
                     
                     <ul class='customers__list'>
                        
-                        {ratingData}
-                        {/* <li class='customers__li'>
-                            <img src={Star} alt="star" />
+                        {/* {ratingData} */}
+                        <li class='customers__li'>
+                            <img src={iconStar} alt="star" />
                         </li>
                         <li class='customers__li'>
-                            <img src={Star} alt="star" />
+                            <img src={iconStar} alt="star" />
                         </li>
                         <li class='customers__li'>
-                            <img src={Star} alt="star" />
+                            <img src={iconStar} alt="star" />
                         </li>
                         <li class='customers__li'>
-                            <img src={HalfStar} alt="star" />
-                        </li> */}
+                            <img src={iconStar} alt="star" />
+                        </li>
+                        <li class='customers__li'>
+                            <img src={i === 1 ? noneStar: halfStar} alt="star" />
+                        </li>
                     </ul>
                 </div>
             </div>

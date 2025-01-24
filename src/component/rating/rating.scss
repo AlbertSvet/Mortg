@@ -1,5 +1,6 @@
 .customers {
     padding-top: 96px;
+    padding-bottom: 130px;
     // .customers__container
 
     &__container {}
@@ -33,7 +34,130 @@
 
     // .customers__slider
 
-    &__slider {}
+    &__slider {
+       position: relative;
+       width: 100%;
+       min-width: 0;
+       border-radius: 4px;
+       background: rgb(18, 104, 147);
+    }
+
+    
+
+
+		// .customers__itemTwo
+
+		&__itemTwo {
+            position: absolute;
+            top: 32px;
+            left: 32px;
+        }
+
+		// .customers__pagin
+
+		&__pagin {}
+
+		// .customers__block-btn
+
+		&__block-btn {
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+            margin-top: 42px;
+        }
+
+		// .customers__left
+
+		&__left {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.425);
+            &::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgb(255, 255, 255);
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+            }
+            &::after{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 14px;
+                height: 14px;
+                transform: translate(-50%, -50%);
+                background-image: url('../slider/arrow.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+		// .customers__right
+
+		&__right {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.425);
+            &::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgb(255, 255, 255);
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+            }
+            &::after{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 14px;
+                height: 14px;
+                transform: translate(-50%, -50%) rotate(180deg);
+                background-image: url('../slider/arrow.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+            // .customers__pagin
+    
+            &__pagin {}
+    
+            // .customers__current
+    
+            &__current {
+                font-family: Roboto;
+                font-size: 30px;
+                font-weight: 700;
+                color: white;
+            }
+    
+            // .customers__total
+    
+            &__total {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.507);
+            }
+    
+    
+    
 }
 
 // карточка бренда 

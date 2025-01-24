@@ -6,7 +6,7 @@ const Story = () =>{
     const [storyItem, setStoryItem] = useState([]);
     const stor = new Server();
     useEffect(()=>{
-        stor.getData('story')
+        stor.getData('http://localhost:5000/story')
         .then(res => setStoryItem(res))
         .catch(er => console.log(er))
     },[])

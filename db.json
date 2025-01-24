@@ -89,5 +89,39 @@
       "text": "Put the final touches on from contract to close. Close the deal.",
       "active": false
     }
+  ],
+  "slide":[
+    {
+      "city": "New York",
+      "name": "Emily Pearson",
+      "position": "Engeneer",
+      "img": "/slide_icon/one.png",
+      "icon": "/slide_icon/right.png",
+      "text": "Terms of your offer, how quickly you can turn things around and who your lenders is. advising, calling listing agents, to get your deal done, Offer-Stage advising, calling listing agents, to get your deal done."
+    },
+    {
+      "city": "Los angeles",
+      "name": "Michael Bronson",
+      "position": "Product designer",
+      "img": "/slide_icon/two.png",
+      "icon": "/slide_icon/right.png",
+      "text": "Terms of your offer, how quickly you can turn things around and who your lenders is. advising, calling listing agents, to get your deal done, Offer-Stage advising, calling listing agents, to get your deal done."
+    },
+    {
+      "city": "Los angeles",
+      "name": "Michael Bronson",
+      "position": "Product designer",
+      "img": "/slide_icon/one.png",
+      "icon": "/slide_icon/right.png",
+      "text": "Terms of your offer, how quickly you can turn things around and who your lenders is. advising, calling listing agents, to get your deal done, Offer-Stage advising, calling listing agents, to get your deal done."
+    },
+    {
+      "city": "Los angeles",
+      "name": "Michael Bronson",
+      "position": "Product designer",
+      "img": "/slide_icon/two.png",
+      "icon": "/slide_icon/right.png",
+      "text": "Terms of your offer, how quickly you can turn things around and who your lenders is. advising, calling listing agents, to get your deal done, Offer-Stage advising, calling listing agents, to get your deal done."
+    }
   ]
 }

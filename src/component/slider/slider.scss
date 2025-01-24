@@ -1,0 +1,125 @@
+.custom-slider {
+
+    // .custom-slider__slide
+
+    &__slide {
+            
+    }
+}
+.custom-slide {
+
+    // .custom-slide__block
+
+    &__block {
+        height: 100%;
+        padding: 24px 32px;
+            
+    }
+
+    // .custom-slide__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid rgb(151, 151, 151,0.2);
+        padding-bottom: 24px;
+        margin-bottom: 26px;
+    }
+
+    // .custom-slide__description
+
+    &__description {}
+
+    // .custom-slide__city
+
+    &__city {
+        color: rgb(39, 143, 180);
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    // .custom-slide__name
+
+    &__name {
+        color: rgb(52, 47, 69);
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+        margin: 10px 0px;
+    }
+
+    // .custom-slide__job
+
+    &__job {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        opacity: .5;
+    }
+
+    // .custom-slide__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: start;
+        gap: 25px;
+    }
+
+    // .custom-slide__text
+
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+       
+    }
+   
+   
+    
+		
+
+
+}
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    bottom: 32px !important;
+    left: 0;
+}
+.custom-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(40, 119, 146);
+    background: rgb(39, 143, 180);
+}
+.custom-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    transition: all 0.3s ease 0s;
+    &::before{
+        content:'';
+        transition: all 0.3s ease 0s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 12px;
+        height: 12px;
+        background-color: rgb(245, 236, 236);
+        border-radius: 50%;
+    }
+   
+}
