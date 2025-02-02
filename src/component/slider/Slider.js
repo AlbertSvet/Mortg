@@ -42,7 +42,7 @@ const Slider = () =>{
     return(
             <>
                 <div class='customers__itemTwo'>
-                        <div class='customers__pagin'><span class='customers__current'>{currentSlide}</span><span class='customers__total'>/{useSlide.length}</span></div>
+                        <div class='customers__pagin'><span class='customers__current'>{currentSlide}</span><span class='customers__total'>/{useSlide.length -1}</span></div>
                         <div class='customers__block-btn'>
                             <button class='customers__left' type='button' onClick={handlePrev}>+</button>
                             <button class='customers__right' type='button' onClick={handleNext}>-</button>
@@ -52,7 +52,7 @@ const Slider = () =>{
                 <Swiper className='custom-slider' 
                         slidesPerView={2} 
                         spaceBetween={25} 
-                        loop={true}
+                        
                         onSwiper={(swiper) => {
                                 swiperRef.current = swiper;                            
                         }}

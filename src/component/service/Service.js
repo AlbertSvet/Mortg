@@ -9,9 +9,10 @@ class Server {
     getData = async (url) =>{
        return await this.makeRequest(url)
     }
-    postData = async (data) =>{
-        return await this.makeRequest(this.apiKey,{
+    postData = async (url,data) =>{
+        return await this.makeRequest(url,{
             method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
             body: data
         })
     }

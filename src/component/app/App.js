@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Footer, Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider} from '../page';
+import { Header, Footer, Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider,Education} from '../page';
 function App() {
   return (
     <div className="wrapper">
@@ -81,6 +81,10 @@ function App() {
                 </div>
                 
               </div>
+            </section>
+
+            <section class='education'>
+                <Education/>
             </section>
         </main>
 

@@ -7,5 +7,6 @@ import Story from "../story/Story";
 import StoryVideo from "../story-video/StoryVideo";
 import Rating from "../rating/Rating";
 import Slider from "../slider/Slider";
+import Education from "../Education/Education";
 
-export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating,Slider}
+export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating,Slider, Education}
