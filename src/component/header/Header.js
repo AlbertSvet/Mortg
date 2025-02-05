@@ -2,6 +2,7 @@ import './header.scss'
 import Logo from '../img/Logo.svg'
 import {useState} from 'react'
 import { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 class Header extends Component{
    
@@ -49,7 +50,7 @@ class Header extends Component{
                     <button onClick={this.changClass} className={clasNamesBtn}>
                         <span></span>
                     </button>
-                    <a href="#"><img className='header__logo' src={Logo} alt="logo" /></a>
+                    <NavLink to='/'><img className='header__logo' src={Logo} alt="logo" /></NavLink>
                 </div>
             </div>
             <div class={clasNamesMenu}>               
@@ -58,7 +59,7 @@ class Header extends Component{
                         <li class="header__item"><a href="" class="header__link">Your teachers</a></li>
                         <li class="header__item"><a href="" class="header__link">Your mortgage journey</a></li>
                         <li class="header__item"><a href="" class="header__link">What our customers say</a></li>
-                        <li class="header__item"><a href="" class="header__link">Blog</a></li>
+                        <li class="header__item"><NavLink to='/blog' className="header__link" style={({isActive}) => isActive ? {color:'rgb(39, 143, 180)'}:null}>Blog</NavLink></li>
                         <li class="header__item"><a href="" class="header__link">Ebook</a></li>
                         <li class="header__item"><a href="" class="header__link">Webinar</a></li>
                     </ul>

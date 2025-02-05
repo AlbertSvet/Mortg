@@ -39,13 +39,13 @@
             width: 54px;
             height: 54px;
             border-radius: 50%;           
-            animation: puls 0.8s infinite alternate;
+            animation: pulss 0.8s infinite alternate;
             background: rgb(39, 143, 180);
             opacity: 0.4;
             z-index: 1;
         
         }
-        @keyframes puls {
+        @keyframes pulss {
             0% {
                 transform: translate(-50%,-50%) scale(.9);
             }
