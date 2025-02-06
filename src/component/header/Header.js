@@ -1,6 +1,6 @@
 import './header.scss'
 import Logo from '../img/Logo.svg'
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -9,11 +9,21 @@ class Header extends Component{
     state = {
         active: false
     }
+
     changClass = (e) =>{
         e.stopPropagation();
         this.setState(({active})=>({
             active: !active
         }))
+    }
+    
+    changLinkClass = (e) =>{
+        if(e.target.classList.contains('header__link')){
+            this.setState({
+                active:false
+            })
+        }
+
     }
     changDocumentClass = (e) =>{
         if(!e.target.closest('.header__menu')){ 
@@ -29,6 +39,7 @@ class Header extends Component{
     componentWillUnmount() {
         document.removeEventListener('click', this.changDocumentClass)
     }
+  
     render() {
         const{active} = this.state
         const body = document.querySelector('body')
@@ -55,7 +66,7 @@ class Header extends Component{
             </div>
             <div class={clasNamesMenu}>               
                 <nav class="header__body">
-                    <ul class="header__list">
+                    <ul class="header__list" onClick={(e)=>this.changLinkClass(e)}>
                         <li class="header__item"><a href="" class="header__link">Your teachers</a></li>
                         <li class="header__item"><a href="" class="header__link">Your mortgage journey</a></li>
                         <li class="header__item"><a href="" class="header__link">What our customers say</a></li>
