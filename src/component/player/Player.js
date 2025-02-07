@@ -1,5 +1,7 @@
 import { useRef, useEffect,useState} from "react"
 import Preload from './Bitmap.png';
+
+
 const Player = ({videoId,getDuratiom}) =>{
     const playerRef = useRef(null)
     const [videoDuration, setDuration] = useState(null);

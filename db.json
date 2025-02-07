@@ -167,5 +167,31 @@
       "file": "/Resourses/test.docx",
       "active": false
     }
+  ],
+  "blog":[
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "What are points and credits?"
+    },
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "Why a mortgage is so much more than just a rate?"
+    },
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "Why a mortgage is so much more than just a rate?"
+    },
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "What are points and credits?"
+    },
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "Why a mortgage is so much more than just a rate?"
+    },
+    {
+      "img": "/blog/Bitmap.png",
+      "subtitle": "Why a mortgage is so much more than just a rate?"
+    }
   ]
 }

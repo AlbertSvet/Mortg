@@ -1,0 +1,31 @@
+.blog {
+
+    // .blog__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    // .blog__img
+
+    &__img {
+        object-fit: cover;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    
+
+		// .blog__block
+
+		&__block {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 25px;
+            padding-top: 50px;
+            
+        }
+
+}
