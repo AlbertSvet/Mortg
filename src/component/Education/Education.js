@@ -10,7 +10,9 @@ const Education = () =>{
                     <Veiw/>
                 </div>
                 <div class='education__blo resources'>
-                    <Resources/>
+                    <div class='resources__block'>
+                        <Resources/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -28,10 +28,9 @@ const Resources = () =>{
     }
 
     return(
-        <div class='resources__block'>
-             <View data={data}
-             oneClick={getClick}/>
-        </div>
+            <View data={data}
+            oneClick={getClick}/>       
+        
     )
 }
 

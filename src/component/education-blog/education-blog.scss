@@ -1,0 +1,10 @@
+.education-blog {
+    
+    // .education-blog__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 25px;
+    }
+}

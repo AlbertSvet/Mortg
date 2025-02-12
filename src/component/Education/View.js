@@ -1,10 +1,14 @@
 
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Server from '../service/Service';
 
 const Veiw = () =>{
     const [data, setData] = useState([]);
     const [activeIndex, setActive] = useState(null)
+
+    const location = useLocation();
+    const home = location.pathname === '/';
 
     useEffect(()=>{
         const education = new Server();
@@ -21,19 +25,17 @@ const Veiw = () =>{
 
     const element = data.map((item, i)=>{
         const {article, name, text,avtor,img,clas} = item;
-
         return(
             <div 
                 key={i}   
                 onMouseMove={()=>hoverActive(i)}
                 // class={i == 0 ? clssNames : 'education__item'}
-                className={`${i === 0 ? clssNames : "education__item"} ${
+                className={`${!clas ? clssNames : "education__item"} ${
                     activeIndex === i && i > 0  ? "education__item hoverEffect" : ""
                 }`}
                 >
 
-
-                {i == 0 ? <img class='education__img' src={img} alt="fon" /> : null}
+                {!clas ? <img class='education__img' src={img} alt="fon" /> : null}
                 <div class='education__abs'>
                     <h3 class={clas ? 'education__subTitle active' : 'education__subTitle'}>Blog</h3>
                     <div class={clas ? 'education__subBLock active' : 'education__subBLock'}>
@@ -49,7 +51,10 @@ const Veiw = () =>{
         )
     })
     return(
-       element
+        <>
+            {home ? element.slice(0,3) : element}
+        </>
+        
     )
 }
 export default Veiw

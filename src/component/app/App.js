@@ -2,7 +2,10 @@ import './App.scss';
 import { Header, Footer, MainPage, Blog, Page404} from '../page';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
+
 function App() {
+
+ 
   return (
     <Router>
       <div className="wrapper">
@@ -10,10 +13,9 @@ function App() {
           <Header/>       
             <main className='page'> 
               <Routes>
-                  
+                 
                     <Route path='/' element={<MainPage/>}/>
-                    <Route path='/blog' element={<Blog/>}/>                
-
+                    <Route path='/blog' element={<Blog/>}/>              
                     <Route path='*' element={<Page404/>}/>
               </Routes>
             </main>
@@ -21,6 +23,7 @@ function App() {
 
       </div>
     </Router>
+
 
   );
 }

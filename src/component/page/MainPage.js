@@ -1,5 +1,4 @@
 import {Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider,Education} from '../page';
-
 const MainPage = () =>{
 
     return(
@@ -75,6 +74,8 @@ const MainPage = () =>{
             <section class='education'>
                 <Education/>
             </section>
+
+
         </>
     )
 }
