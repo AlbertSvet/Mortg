@@ -1,7 +1,7 @@
 import './blog.scss';
-import BlogItemVideo from '../blog-item-video/BlogItemVideo';
-import ResourcesBlog from '../resources-blog/ResourcesBlog';
-import EducationBlog from '../education-blog/EducationBlog';
+import BlogItemVideo from '../../blog-item-video/BlogItemVideo';
+import ResourcesBlog from '../../resources-blog/ResourcesBlog';
+import EducationBlog from '../../education-blog/EducationBlog';
 const Blog = () => {
     return(
         <>

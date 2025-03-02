@@ -203,10 +203,14 @@
       "text": "9 Things You Must Know About Buying Your First Home",
       "hidden": "Webinar name",
       "title": "Resourses",
+      "autor": "Scott Johnson",
       "book": "/Resourses/book.png",
       "hiddenBook": "/Resourses/hidden.png",
       "file": "/Resourses/test.docx",
-      "active": true
+      "pageImg": "/books/book1.png",
+      "about": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.",
+      "active": true,
+      "id": "1"
     },
     {
       "text": "3 Things You Must Know About Buying Your First Home",
@@ -214,8 +218,10 @@
       "title": "Resourses",
       "book": "/Resourses/book.png",
       "hiddenBook": "/Resourses/hidden.png",
+      "about": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.",
       "file": "/Resourses/test.docx",
-      "active": false
+      "active": false,
+      "id": "2"
     }
   ],
   "blog":[

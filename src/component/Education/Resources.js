@@ -1,6 +1,6 @@
 import Server from "../service/Service"
 import { useState, useEffect } from "react"
-
+import { Link } from "react-router-dom";
 const Resources = () =>{
     const [data, setData] = useState([]);
 
@@ -36,7 +36,7 @@ const Resources = () =>{
 
 const View = ({data,oneClick}) =>{
     const element = data.map((item,i)=>{
-        const {text,book,title,file,hiddenBook,hidden,active} = item
+        const {text,book,title,file,hiddenBook,hidden,active,id} = item
         const btn = <button class='resources__btn'>
                         <a class='resources__link' href={file} download>Download</a>
                         <div class='resources__circl'></div>
@@ -44,6 +44,7 @@ const View = ({data,oneClick}) =>{
         const hiddenBtn = <button onClick={()=>oneClick(i)} class='resources__hiddenBtn'>
                             <div class='resources__hiddenCircl'></div>
                           </button>
+        const link = <Link to={`/books/${id}`} class='resources__text'>{text}</Link>                  
 
         return(
             
@@ -52,7 +53,7 @@ const View = ({data,oneClick}) =>{
                         <img src={active ? book : hiddenBook} alt="book" />
                         <div class='resources__blog'>
                             <h3 class='resources__title'>{title}</h3>
-                            <p class='resources__text'>{active ? text : hidden}</p>
+                           <div class='resources__text'>{active ? link : hidden}</div>
                         </div>
                     </div>
                     {active ? btn : hiddenBtn}
