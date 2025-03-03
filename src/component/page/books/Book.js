@@ -1,12 +1,34 @@
-import { useParams,Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import './books.scss';
+import Percent from './percent.svg';
+import Clip from './clipboard.svg';
+import User from './users.svg';
 import Server from "../../service/Service";
+
+const mainBlock = [
+    {
+        subTitle: 'Rate',
+        subText: 'Yes. Rate is important, but it’s not everything. Understanding your rate, is more important.',
+        img: Percent
+    },
+    {
+        subTitle: 'Relationships',
+        subText: 'Build a solid relationship with a realtor a lender and never look back!',
+        img: User
+    },
+    {
+        subTitle: 'Pre-Approved',
+        subText: 'Getting pre-approved early will play a key part in finding your dream home.',
+        img: Clip
+    },
+]
 
 const Book = ()=>{
     const urlBook = useParams();
     const [book, setBook] = useState([]);
-
+    const [main, setMain] = useState(mainBlock);
+    
     useEffect(()=>{
         const getBook = new Server();
         getBook.getData('http://localhost:5000/resources')
@@ -22,6 +44,13 @@ const Book = ()=>{
 
             <div class='book__container _container'>
                 <View book={book} urlBook={urlBook} />
+                
+                <div class='book__main-block main-block'>
+                    <h2 class='main-block__title title'>What’s in the report</h2>
+                    <div class='main-block__grid'>                    
+                        <Main main={main}/>
+                    </div>
+                </div>
             </div> 
         </div>
     )
@@ -63,4 +92,24 @@ const View = ({book,urlBook}) =>{
         </>
     )
 }
+
+const Main = ({main}) =>{ 
+
+    const elemnt = main.map((item,i)=>{
+        const {subTitle, subText, img} = item
+        return(
+            <div key={i} class='main-block__item'>
+                <div class='main-block__pic'>
+                    <img src={img} alt="icon" />
+                </div>
+                <h3 class='main-block__subTitle'>{subTitle}</h3>
+                <p class='main-block__subText'>{subText}</p>
+            </div>
+        )
+    })
+    return(
+        elemnt
+    )
+}
 export default Book
+
