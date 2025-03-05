@@ -200,3 +200,100 @@
 }
 
 
+
+.block-author {
+    margin-top: 100px;
+    margin-bottom: 95px;
+    padding-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // .block-author__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .block-author__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    // .block-author__item
+
+    &__item {
+        margin: auto 0;
+    }
+
+    // .block-author__subText
+
+    &__subText {
+        color: rgb(39, 143, 180);
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+        text-transform: uppercase;
+    }
+
+    // .block-author__subTitle
+
+    &__subTitle {
+        color: rgb(52, 47, 69);
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-top: 5px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 20px;
+        margin-bottom: 17px;
+        &::before{
+            content:'';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 50%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.39);
+        }
+    }
+
+    // .block-author__text
+
+    &__text {
+        color: rgb(0, 0, 0,.5);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      
+    }
+
+    // .block-author__block-btn
+
+    &__block-btn {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    // .block-author__name
+
+    &__name {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        
+    }
+}
+
+
+

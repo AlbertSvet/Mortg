@@ -1,19 +1,15 @@
 import './App.scss';
 import { Header, Footer, MainPage, Blog, Page404,Book} from '../page';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
-
 function App() {
 
  
   return (
     <Router>
       <div className="wrapper">
-
           <Header/>       
             <main className='page'> 
               <Routes>
-                 
                     <Route path='/' element={<MainPage/>}/>
                     <Route path='/blog' element={<Blog/>}/>  
                     <Route path='/books/:booksId' element={<Book/>} />            
@@ -21,7 +17,6 @@ function App() {
               </Routes>
             </main>
           <Footer/>
-
       </div>
     </Router>
 

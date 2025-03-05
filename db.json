@@ -210,7 +210,12 @@
       "pageImg": "/books/book1.png",
       "about": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.",
       "active": true,
-      "id": "1"
+      "id": "1",
+      "blockAutor": {
+        "name": "Meet Justin",
+        "autorText": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+        "image":"/books/Justin.png"
+      }
     },
     {
       "text": "3 Things You Must Know About Buying Your First Home",
@@ -221,7 +226,12 @@
       "about": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.",
       "file": "/Resourses/test.docx",
       "active": false,
-      "id": "2"
+      "id": "2",
+      "blockAutor": {
+        "name": "Meet Scott",
+        "autorText": "Rates change, but every mortgage journey starts with a relationship. (Pssst...it’s not just about clicking a button)",
+        "image":"/books/Scott.png"
+      }
     }
   ],
   "blog":[
