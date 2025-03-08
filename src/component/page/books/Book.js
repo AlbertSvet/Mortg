@@ -1,34 +1,14 @@
-import { useParams } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { Link, useParams } from "react-router-dom"
+import { useState, useEffect,useContext } from "react"
 import './books.scss';
-import Percent from './percent.svg';
-import Clip from './clipboard.svg';
-import User from './users.svg';
 import Server from "../../service/Service";
 import BtnAnimation from "../../btnAnim/BtnAnimation";
-
-const mainBlock = [
-    {
-        subTitle: 'Rate',
-        subText: 'Yes. Rate is important, but it’s not everything. Understanding your rate, is more important.',
-        img: Percent
-    },
-    {
-        subTitle: 'Relationships',
-        subText: 'Build a solid relationship with a realtor a lender and never look back!',
-        img: User
-    },
-    {
-        subTitle: 'Pre-Approved',
-        subText: 'Getting pre-approved early will play a key part in finding your dream home.',
-        img: Clip
-    },
-]
+import dataContext from "../../context/context";
+import Cat from '../../player/Bitmap.png';
 
 const Book = ()=>{
     const urlBook = useParams();
-    const [book, setBook] = useState([]);    
-
+    const [book, setBook] = useState([]);        
     useEffect(()=>{
         const getBook = new Server();
         getBook.getData('http://localhost:5000/resources')
@@ -101,6 +81,27 @@ const View = ({book,urlBook}) =>{
                                         </div>
                                     </div>
                                 </div>
+                            
+                                <div class='book__get-started get-started'>
+                                    <div class='get-started__grid'>
+                                        <div class='get-started__item'>
+                                            <div>
+                                                <h2 class='get-started__title title'>Get started with us</h2>
+                                                <p class='get-started__text'>Rates change, but every mortgage journey starts with a relationship.
+                                                (Pssst...it’s not just about clicking a button)</p>
+                                            </div>
+                                            <div class='get-started__block'>
+                                                <Link to={`${name.split(' ').slice(1)}`} class='get-started__btn get-started__btn--blue' type="button">Get started</Link >
+                                                <button class='get-started__btn' type="button">Schedule a time</button>
+                                            </div>
+                                        </div>                                        
+                                        <div class='get-started__item'>
+                                            <img src={Cat} alt="cat" />
+                                        </div>                                        
+                                    </div>
+
+                                </div>
+
                             </div>
                         )
                      }
@@ -111,8 +112,8 @@ const View = ({book,urlBook}) =>{
 }
 
 const Main = () =>{ 
-    const [main, setMain] = useState(mainBlock);
-
+    const myContextBook = useContext(dataContext)
+    const [main, setMain] = useState(myContextBook);
     const elemnt = main.map((item,i)=>{
         const {subTitle, subText, img} = item
         return(

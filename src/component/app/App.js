@@ -1,8 +1,10 @@
 import './App.scss';
-import { Header, Footer, MainPage, Blog, Page404,Book} from '../page';
+import { Header, Footer, MainPage, Blog, Page404,Book, Description} from '../page';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-function App() {
 
+
+
+function App() {
  
   return (
     <Router>
@@ -12,7 +14,8 @@ function App() {
               <Routes>
                     <Route path='/' element={<MainPage/>}/>
                     <Route path='/blog' element={<Blog/>}/>  
-                    <Route path='/books/:booksId' element={<Book/>} />            
+                    <Route path='/books/:booksId' element={<Book/>} />   
+                    <Route path='/books/:booksId/:descriptionId' element={<Description/>}></Route>         
                     <Route path='*' element={<Page404/>}/>
               </Routes>
             </main>

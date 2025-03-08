@@ -259,5 +259,23 @@
       "img": "/blog/Bitmap.png",
       "subtitle": "Why a mortgage is so much more than just a rate?"
     }
+  ],
+  "description": [
+    {
+      "name": "Justin Johnson",
+      "title": "9 Things You Must Know About Buying Your First Home",
+      "firstThing": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be. So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership.",
+      "secondThing": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be. So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership.",
+      "firstImg": "/description/first.png",
+      "secondImg": "/description/second.png"
+    },
+    {
+      "name": "Scott Johnson",
+      "title": "3 Things You Must Know About Buying Your First Home",
+      "firstThing": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be. So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership.",
+      "secondThing": "So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be. So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.So you’re about to get into the world of homeownership.",
+      "firstImg": "/description/first.png",
+      "secondImg": "/description/second.png"
+    }
   ]
 }

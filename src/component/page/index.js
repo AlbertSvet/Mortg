@@ -12,5 +12,5 @@ import Blog from "./blog/Blog";
 import MainPage from "./MainPage";
 import Page404 from "./404";
 import Book from "./books/Book";
-
-export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating,Slider, Education, Blog, MainPage, Book, Page404}
+import Description from "./descriptionBook/Description";
+export {Finding, Header, Footer, Getting, BtnAnimation, Story, StoryVideo,Rating,Slider, Education, Blog, MainPage, Book,Description, Page404}
