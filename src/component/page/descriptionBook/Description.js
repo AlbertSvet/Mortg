@@ -6,7 +6,7 @@ import Fon from './fon.png'
 const Description = () =>{
    const {descriptionId} = useParams()
    const [data, setData] = useState([])
-
+  
    useEffect(()=>{
     const myData = new Server()
     myData.getData('http://localhost:5000/description')

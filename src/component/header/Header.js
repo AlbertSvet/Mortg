@@ -17,6 +17,7 @@ class Header extends Component{
         }))
     }
     
+    
     changLinkClass = (e) =>{
         if(e.target.classList.contains('header__link')){
             this.setState({

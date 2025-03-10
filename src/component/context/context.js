@@ -17,5 +17,5 @@ const mainBlock = [
     },
 ]
 const dataContext = createContext(mainBlock);
-
+console.log(dataContext);
 export default dataContext
