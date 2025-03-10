@@ -1,12 +1,14 @@
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams,useLocation } from "react-router-dom"
 import { useState, useEffect,useContext } from "react"
 import './books.scss';
 import Server from "../../service/Service";
 import BtnAnimation from "../../btnAnim/BtnAnimation";
 import dataContext from "../../context/context";
 import Cat from '../../player/Bitmap.png';
+import MacBook from './top-macbook.png'
 
 const Book = ()=>{
+    const {pathname} = useLocation()
     const urlBook = useParams();
     const [book, setBook] = useState([]);        
     useEffect(()=>{
@@ -15,21 +17,24 @@ const Book = ()=>{
         .then(res => setBook(res))
         .catch(er => console.log(er))
     },[urlBook.booksId])
-
+    
     return(
         <div class='book'>
-            <div class='book__fon'>
+            {pathname == '/books/1' ? 
+                <div class='book__fon'>
                     <img class='book__img' src='/books/fon.png' alt="fon" />
-            </div>
-
+                </div>
+            :
+            <SecondAvtor/>            
+            }
             <div class='book__container _container'>
-                <View book={book} urlBook={urlBook} />
+                <View book={book} urlBook={urlBook} pathname={pathname} />
             </div> 
         </div>
     )
 }
 
-const View = ({book,urlBook}) =>{
+const View = ({book,urlBook,pathname}) =>{
     return(
         <>
             {book.map((item,i)=>{
@@ -39,7 +44,8 @@ const View = ({book,urlBook}) =>{
                      if(id === booksId){
                         return(
                             <div key={id}>
-                                <div class='book__grid'>                                    
+                               {pathname == '/books/1' ? 
+                                 <div class='book__grid'>                                    
                                     <div class='book__item'>
                                         {pageImg ? <img src={pageImg} alt="book1" /> :  <p style={{ color: 'white', fontSize: '35px' }}>No picture of book</p>}                                    
                                     </div>
@@ -51,13 +57,15 @@ const View = ({book,urlBook}) =>{
                                             <h3 class='book__subTitle'>About the book</h3>
                                             <p class='book__text'>{about}</p>
                                         </div>
-                                        <div class='book__block-input'>
-                                            <input class='book__input' type="text" placeholder="Your Email"/>
-                                            <button type="button" class='book__btn'>Get the eBook</button>
-                                        </div>
+                                        <BlockInput/>
                                     </div>
                                     
                                 </div>
+                             :
+                             null
+                            
+                            }
+                               
 
                                 <div class='book__main-block main-block'>
                                     <h2 class='main-block__title title'>What’s in the report</h2>
@@ -128,6 +136,34 @@ const Main = () =>{
     })
     return(
         elemnt
+    )
+}
+const SecondAvtor = () =>{
+    return(
+        <div class='book__second-grid second-block'>
+                <div class='second-block__grid'>
+                    <div class='second-block__item'>
+                        <h2 class='second-block__title title'>Webinar name</h2>
+                        <h3 class='second-block__name'>Scott Johnson</h3>
+                        <p class='second-block__text'>So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.</p>
+                        <BlockInput/>
+                    </div>
+                    <div class='second-block__item'>
+                        <img src={MacBook} alt="macbook" />
+                        <div class='second-block__btn'>
+                            <BtnAnimation/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    )
+}
+const BlockInput = () =>{
+    return(
+        <div class='book__block-input'>
+            <input class='book__input' type="text" placeholder="Your Email"/>
+            <button type="button" class='book__btn'>Get the eBook</button>
+        </div>
     )
 }
 export default Book
