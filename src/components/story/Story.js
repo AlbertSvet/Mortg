@@ -1,5 +1,5 @@
 import './story.scss';
-import Server from '../service/Service';
+import Server from '../../service/Service';
 import { useState, useEffect } from 'react';
 
 const Story = () =>{

@@ -1,7 +1,7 @@
 import './BlogItemVideo.scss';
 import { useEffect,useState } from 'react';
 import { BtnAnimation } from '../page';
-import Server from '../service/Service';
+import Server from '../../service/Service';
 
 const BlogItemVideo = () =>{
     const [blogData, setBlog] = useState([])

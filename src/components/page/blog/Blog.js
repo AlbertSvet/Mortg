@@ -4,7 +4,7 @@ import ResourcesBlog from '../../resources-blog/ResourcesBlog';
 import EducationBlog from '../../education-blog/EducationBlog';
 const Blog = () => {
     return(
-        <>
+        <div class='main-blog' style={{paddingBottom:"60px"}}>
             <section clss='blog'>
                 <div class="blog__container">
                     <img class='blog__img' src='/blog/blogFon.png' alt="fon" />
@@ -26,7 +26,7 @@ const Blog = () => {
                     <EducationBlog/>
                 </div>
             </section>
-        </>
+        </div>
 
     )
 }

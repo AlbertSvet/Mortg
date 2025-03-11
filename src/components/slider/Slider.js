@@ -2,7 +2,7 @@ import './slider.scss';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from 'swiper/modules';
 import { useState, useEffect } from 'react';
-import Server from '../service/Service';
+import Server from '../../service/Service';
 import "swiper/css"; // Основные стили Swiper
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

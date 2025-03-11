@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Server from '../service/Service';
+import Server from '../../service/Service';
 
 const Veiw = () =>{
     const [data, setData] = useState([]);

@@ -1,6 +1,6 @@
 import './getting.scss';
 import { BtnAnimation } from '../page';
-import Server from '../service/Service';
+import Server from '../../service/Service';
 import { useEffect, useState } from 'react';
 
 const Getting = () =>{
