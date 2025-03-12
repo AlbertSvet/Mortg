@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Server from "../../../service/Service"
+import Server from "../../service/Service";
 import './descr.scss'
 import Fon from './fon.png'
 const Description = () =>{

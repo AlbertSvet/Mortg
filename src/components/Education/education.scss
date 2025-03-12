@@ -111,6 +111,7 @@
     &__subBLock {
         position: relative;
         padding-bottom: 20px;
+        margin-top: 82px;
         &::before{
             content:'';
             position: absolute;
@@ -171,6 +172,7 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        margin-top: 23px;
     }
 
     // .education__name

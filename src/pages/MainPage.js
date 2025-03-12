@@ -1,4 +1,4 @@
-import {Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider,Education} from '../page';
+import {Finding, Getting, Story, StoryVideo, BtnAnimation,Rating,Slider,Education} from '../pages';
 const MainPage = () =>{
 
     return(

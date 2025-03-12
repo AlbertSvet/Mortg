@@ -1,6 +1,5 @@
 import './header.scss'
-import Logo from '../img/Logo.svg'
-import {useState, useRef} from 'react'
+import Logo from './Logo.svg'
 import { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -10,15 +9,17 @@ class Header extends Component{
         active: false
     }
 
-    changClass = (e) =>{
+    changeClass = (e) =>{
         e.stopPropagation();
-        this.setState(({active})=>({
-            active: !active
-        }))
+        this.setState(({active})=>{
+            return {
+                active: !active
+            }
+        })
     }
     
     
-    changLinkClass = (e) =>{
+    changeLinkClass = (e) =>{
         if(e.target.classList.contains('header__link')){
             this.setState({
                 active:false
@@ -26,7 +27,7 @@ class Header extends Component{
         }
 
     }
-    changDocumentClass = (e) =>{
+    changeDocumentClass = (e) =>{
         if(!e.target.closest('.header__menu')){ 
             this.setState({
                 active: false
@@ -34,11 +35,11 @@ class Header extends Component{
         }
     }
     componentDidMount() {
-            document.addEventListener('click', this.changDocumentClass)
+            document.addEventListener('click', this.changeDocumentClass)
        
     }
     componentWillUnmount() {
-        document.removeEventListener('click', this.changDocumentClass)
+        document.removeEventListener('click', this.changeDocumentClass)
     }
   
     render() {
@@ -59,7 +60,7 @@ class Header extends Component{
             <div className ='header__container'>
                 <div className='header__flex'>
                     
-                    <button onClick={this.changClass} className={clasNamesBtn}>
+                    <button onClick={this.changeClass} className={clasNamesBtn}>
                         <span></span>
                     </button>
                     <NavLink to='/'><img className='header__logo' src={Logo} alt="logo" /></NavLink>
@@ -67,12 +68,12 @@ class Header extends Component{
             </div>
             <div class={clasNamesMenu}>               
                 <nav class="header__body">
-                    <ul class="header__list" onClick={(e)=>this.changLinkClass(e)}>
+                    <ul class="header__list" onClick={(e)=>this.changeLinkClass(e)}>
                         <li class="header__item"><a href="" class="header__link">Your teachers</a></li>
                         <li class="header__item"><a href="" class="header__link">Your mortgage journey</a></li>
                         <li class="header__item"><a href="" class="header__link">What our customers say</a></li>
                         <li class="header__item"><NavLink to='/blog' className="header__link" style={({isActive}) => isActive ? {color:'rgb(39, 143, 180)'}:null}>Blog</NavLink></li>
-                        <li class="header__item"><a href="" class="header__link">Ebook</a></li>
+                        <li class="header__item"><NavLink to='/books/1' className="header__link" style={({isActive})=>isActive?{color:'rgb(39, 143, 180)'}:null}>Ebook</NavLink></li>
                         <li class="header__item"><a href="" class="header__link">Webinar</a></li>
                     </ul>
                 </nav>

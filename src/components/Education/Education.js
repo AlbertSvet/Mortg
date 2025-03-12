@@ -1,5 +1,5 @@
 import './education.scss'
-import Veiw from './View'
+import View from './View'
 import Resources from './Resources'
 const Education = () =>{
     return(
@@ -7,7 +7,7 @@ const Education = () =>{
             <h2 class='education__title title'>Education</h2>
             <div class='education__main-grid'>
                 <div class='education__block'>
-                    <Veiw/>
+                    <View/>
                 </div>
                 <div class='education__blo resources'>
                     <div class='resources__block'>

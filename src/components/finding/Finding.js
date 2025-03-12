@@ -1,6 +1,6 @@
 import './Finding.scss';
 import Player from '../player/Player';
-import { BtnAnimation } from '../page';
+import { BtnAnimation } from '../../pages';
 import { useState } from 'react';
 const Finding = () =>{
     const [duration, setDuration] = useState(null)

@@ -1,5 +1,5 @@
 import './getting.scss';
-import { BtnAnimation } from '../page';
+import { BtnAnimation } from '../../pages';
 import Server from '../../service/Service';
 import { useEffect, useState } from 'react';
 

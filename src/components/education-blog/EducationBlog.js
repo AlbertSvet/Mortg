@@ -1,5 +1,5 @@
 import './education-blog.scss'
-import Veiw from '../Education/View'
+import Veiw from '../education/View'
 
 const EducationBlog = () =>{
     return(

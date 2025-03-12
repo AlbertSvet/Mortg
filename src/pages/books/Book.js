@@ -1,10 +1,10 @@
 import { Link, useParams,useLocation } from "react-router-dom"
 import { useState, useEffect,useContext } from "react"
 import './books.scss';
-import Server from "../../../service/Service";
-import BtnAnimation from "../../btnAnim/BtnAnimation";
-import dataContext from "../../../context/context";
-import Cat from '../../player/Bitmap.png';
+import Server from "../../service/Service";
+import BtnAnimation from "../../components/btnAnim/BtnAnimation";
+import dataContext from "../../context/context";
+import Cat from '../../components/player/Bitmap.png';
 import MacBook from './top-macbook.png'
 
 const Book = ()=>{

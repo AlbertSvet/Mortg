@@ -1,5 +1,5 @@
 import './resources-blog.scss';
-import Resources from "../Education/Resources"
+import Resources from '../education/Resources';
 
 
 const ResourcesBlog = ()=>{

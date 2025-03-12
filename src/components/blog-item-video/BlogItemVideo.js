@@ -1,6 +1,6 @@
 import './BlogItemVideo.scss';
 import { useEffect,useState } from 'react';
-import { BtnAnimation } from '../page';
+import { BtnAnimation } from '../../pages';
 import Server from '../../service/Service';
 
 const BlogItemVideo = () =>{

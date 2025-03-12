@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Footer, MainPage, Blog, Page404,Book, Description} from '../page';
+import { Header, Footer, MainPage, Blog, Page404,Book, Description} from '../../pages';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
