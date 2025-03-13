@@ -40,7 +40,7 @@ const Header = () =>{
         const body = document.querySelector('body')
         let clasNamesBtn = 'header__btn';
         let clasNamesMenu = 'header__menu';
-        const local = (pathname === '/' || pathname === '/blog') ? Logo : WhiteLogo;
+        const local = (pathname === '/' || pathname === '/blog' || active) ? Logo : WhiteLogo;
         if(active){
             clasNamesBtn += ' active'
             clasNamesMenu += ' active'
