@@ -11,7 +11,6 @@ const Story = () =>{
         .catch(er => console.log(er))
     },[])
 
-    console.log(storyItem)
 
     const getId = (id) =>{
         setStoryItem((prev) =>{
@@ -43,10 +42,10 @@ const View = (props) =>{
             classNames += ' active'
         }
         return(
-            <div onClick={()=> getId(i)} key={i} class={classNames}>
-                <span class='story__span'>{id}</span>
-                <h3 class='story__item-title'>{title}</h3>
-                <p class='story__item-text'>{text}</p>
+            <div onClick={()=> getId(i)} key={i} className={classNames}>
+                <span className='story__span'>{id}</span>
+                <h3 className='story__item-title'>{title}</h3>
+                <p className='story__item-text'>{text}</p>
             </div>
         )
     })

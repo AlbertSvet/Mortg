@@ -15,7 +15,7 @@ const Description = () =>{
    },[descriptionId])
 
     return(
-        <section class='description'>            
+        <section className='description'>            
             <View data={data} descriptionId={descriptionId}/>
         </section>
     )
@@ -28,27 +28,27 @@ const View = ({data,descriptionId}) =>{
         if(descriptionId == names) {
             return(
                 <>
-                    <div class='description__fon'>
+                    <div className='description__fon'>
                         <img src={Fon} alt="fon" />
-                        <div class='description__blockTitle'>
-                            <h2 class='description__title title'>
+                        <div className='description__blockTitle'>
+                            <h2 className='description__title title'>
                                 {title}
                             </h2>
-                            <h3 class='description__subTitle'>
+                            <h3 className='description__subTitle'>
                                 {name}
                             </h3>
                         </div>
                        
                     </div>
-                    <div class='description__container'>
-                        <div class='description__block main-description'>
-                            <h2 class='main-description__title title'>What’s in the report</h2>
-                            <p class='main-description__subtext'>So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.</p>
-                            <h2 class='main-description__title title'>1st thing</h2>
-                            <p class='main-description__text'>{firstThing}</p>
+                    <div className='description__container'>
+                        <div className='description__block main-description'>
+                            <h2 className='main-description__title title'>What’s in the report</h2>
+                            <p className='main-description__subtext'>So you’re about to get into the world of homeownership. It’s okay...everyone feels lost during this process, but the more preparation you do upfront, the smoother your journey will be.</p>
+                            <h2 className='main-description__title title'>1st thing</h2>
+                            <p className='main-description__text'>{firstThing}</p>
                             <img src={secondImg} alt="fon" />
-                            <h2 class='main-description__title title'>2nd thing</h2>
-                            <p class='main-description__text'>{secondThing}</p>
+                            <h2 className='main-description__title title'>2nd thing</h2>
+                            <p className='main-description__text'>{secondThing}</p>
                             <img src={firstImg} alt="fon" />
                         </div>
                     </div>

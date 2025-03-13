@@ -21,11 +21,11 @@ const BlogItemVideo = () =>{
                 blogData.map((item,i)=>{
                     const {subtitle,img} = item
                     return(
-                        <div class='blog__item' key={i}>
-                            <img class='blog__pic' img src={img} alt="pic" />
-                            <div class='blog__control'>
+                        <div className='blog__item' key={i}>
+                            <img className='blog__pic' img src={img} alt="pic" />
+                            <div className='blog__control'>
                                 <BtnAnimation/>
-                                <h3 class='blog__subTitle'>{subtitle}</h3>
+                                <h3 className='blog__subTitle'>{subtitle}</h3>
                             </div>
                         </div>
                     )

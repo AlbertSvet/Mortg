@@ -3,14 +3,14 @@ import View from './View'
 import Resources from './Resources'
 const Education = () =>{
     return(
-        <div class='education__container _container'>
-            <h2 class='education__title title'>Education</h2>
-            <div class='education__main-grid'>
-                <div class='education__block'>
+        <div className='education__container _container'>
+            <h2 className='education__title title'>Education</h2>
+            <div className='education__main-grid'>
+                <div className='education__block'>
                     <View/>
                 </div>
-                <div class='education__blo resources'>
-                    <div class='resources__block'>
+                <div className='education__blo resources'>
+                    <div className='resources__block'>
                         <Resources/>
                     </div>
                 </div>

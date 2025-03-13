@@ -27,28 +27,28 @@ const View = ({result}) =>{
                 const nameAvtor = name.split(' ').slice(-1)
                 
                 return(
-                    <div class='getting__item' key={i}>
-                        <div class='getting__top'>
+                    <div className='getting__item' key={i}>
+                        <div className='getting__top'>
                             <img src={thumbs} alt="alt" />
-                            <div class='getting__block'>
+                            <div className='getting__block'>
                                 <BtnAnimation link={videoUrl}/>
                                 {name}
                             </div>
                         </div>
-                        <div class='getting__bootom'>
-                            <div class='getting__sub-top'>
-                                <h3 class='getting__nameTitle'>{title}</h3>
-                                <p class='getting__name'>{nameAvtor}</p>
-                                <p class='getting__text'>{text}</p>
+                        <div className='getting__bootom'>
+                            <div className='getting__sub-top'>
+                                <h3 className='getting__nameTitle'>{title}</h3>
+                                <p className='getting__name'>{nameAvtor}</p>
+                                <p className='getting__text'>{text}</p>
                             </div>
-                            <div class='getting__block-skill'>
-                                <h3 class='getting__skills-title'>Skills</h3>
-                                <div class='getting__icons'>
+                            <div className='getting__block-skill'>
+                                <h3 className='getting__skills-title'>Skills</h3>
+                                <div className='getting__icons'>
                                     {skills.map((item,i) => {
                                         return(                                            
-                                            <div class='getting__block-icon' key={i}>
-                                                <div class='getting__icon'><img src={item.icon} alt={item.name}/></div>
-                                                <p class='getting__name-skill'>{item.name}</p>
+                                            <div className='getting__block-icon' key={i}>
+                                                <div className='getting__icon'><img src={item.icon} alt={item.name}/></div>
+                                                <p className='getting__name-skill'>{item.name}</p>
                                             </div>
                                         )
                                     })}

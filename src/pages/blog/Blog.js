@@ -4,25 +4,25 @@ import ResourcesBlog from '../../components/resources-blog/ResourcesBlog';
 import EducationBlog from '../../components/education-blog/EducationBlog';
 const Blog = () => {
     return(
-        <div class='main-blog' style={{paddingBottom:"60px"}}>
+        <div className='main-blog' style={{paddingBottom:"60px"}}>
             <section clss='blog'>
-                <div class="blog__container">
-                    <img class='blog__img' src='/blog/blogFon.png' alt="fon" />
+                <div className="blog__container">
+                    <img className='blog__img' src='/blog/blogFon.png' alt="fon" />
                 </div>
 
-                <div class='blog__block _container'>
+                <div className='blog__block _container'>
                     <BlogItemVideo/>
                 </div>
             </section>
 
             <section clss='resources-blog'>
-                <div class='resources-blog__container _container'>
+                <div className='resources-blog__container _container'>
                     <ResourcesBlog/>
                 </div>
             </section>
             <section clss='education-blog'>
-                <div class='education-blog__container _container'>
-                    <h2 class='education-blog__title title'>Education</h2>
+                <div className='education-blog__container _container'>
+                    <h2 className='education-blog__title title'>Education</h2>
                     <EducationBlog/>
                 </div>
             </section>

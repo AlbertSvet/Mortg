@@ -41,11 +41,11 @@ const Slider = () =>{
 
     return(
             <>
-                <div class='customers__itemTwo'>
-                        <div class='customers__pagin'><span class='customers__current'>{currentSlide}</span><span class='customers__total'>/{useSlide.length -1}</span></div>
-                        <div class='customers__block-btn'>
-                            <button class='customers__left' type='button' onClick={handlePrev}>+</button>
-                            <button class='customers__right' type='button' onClick={handleNext}>-</button>
+                <div className='customers__itemTwo'>
+                        <div className='customers__pagin'><span className='customers__current'>{currentSlide}</span><span className='customers__total'>/{useSlide.length -1}</span></div>
+                        <div className='customers__block-btn'>
+                            <button className='customers__left' type='button' onClick={handlePrev}>+</button>
+                            <button className='customers__right' type='button' onClick={handleNext}>-</button>
                         </div>
                 </div>
 
@@ -87,7 +87,7 @@ const Slider = () =>{
                     })}
                 </Swiper>
 
-                <div class="custom-pagination"></div>
+                <div className="custom-pagination"></div>
             </>
     )
 }

@@ -38,23 +38,23 @@ const Resources = () =>{
 const View = ({data,oneClick}) =>{
     const element = data.map((item,i)=>{
         const {text,book,title,file,hiddenBook,hidden,active,id} = item
-        const btn = <button class='resources__btn'>
-                        <a class='resources__link' href={file} download>Download</a>
-                        <div class='resources__circl'></div>
+        const btn = <button className='resources__btn'>
+                        <a className='resources__link' href={file} download>Download</a>
+                        <div className='resources__circl'></div>
                     </button>
-        const hiddenBtn = <button onClick={()=>oneClick(i)} class='resources__hiddenBtn'>
-                            <div class='resources__hiddenCircl'></div>
+        const hiddenBtn = <button onClick={()=>oneClick(i)} className='resources__hiddenBtn'>
+                            <div className='resources__hiddenCircl'></div>
                           </button>
-        const link = <Link to={`/books/${id}`} class='resources__text'>{text}</Link>                  
+        const link = <Link to={`/books/${id}`} className='resources__text'>{text}</Link>                  
 
         return(
             
-                <div class='resources__item' key={i}>
-                    <div class='resources__top'>
+                <div className='resources__item' key={i}>
+                    <div className='resources__top'>
                         <img src={active ? book : hiddenBook} alt="book" />
-                        <div class='resources__blog'>
-                            <h3 class='resources__title'>{title}</h3>
-                           <div class='resources__text'>{active ? link : hidden}</div>
+                        <div className='resources__blog'>
+                            <h3 className='resources__title'>{title}</h3>
+                           <div className='resources__text'>{active ? link : hidden}</div>
                         </div>
                     </div>
                     {active ? btn : hiddenBtn}

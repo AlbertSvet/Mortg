@@ -15,35 +15,35 @@ const Finding = () =>{
 
     const newFormat = formatDuration(duration)
     return (
-        <section class='Finding'>
-            <div class='Finding__container _container'>
-                <div class='Finding__flex'>
-                    <div class='Finding__item-video'>
+        <section className='Finding'>
+            <div className='Finding__container _container'>
+                <div className='Finding__flex'>
+                    <div className='Finding__item-video'>
                         <Player 
                         getDuratiom = {getDuratiom}
                         videoId='SegcMrEB8yA'/>
-                        <div class='Finding__block-play'>
-                            <h4 class='Finding__video-title'>Why a mortgage is so much more 
+                        <div className='Finding__block-play'>
+                            <h4 className='Finding__video-title'>Why a mortgage is so much more 
                             than just a rate?</h4>
-                            <div class='Finding__item-play'>
+                            <div className='Finding__item-play'>
                                 
                                 <BtnAnimation link={'https://www.youtube.com/watch?v=SegcMrEB8yA'}/>
                                 
-                                <span class='Finding__sec'>{newFormat}</span>
+                                <span className='Finding__sec'>{newFormat}</span>
                             </div>
                         </div>
                     </div>
-                    <div class='Finding__item'>
+                    <div className='Finding__item'>
                         <div>
-                            <h1 class='Finding__title'>Finding a mortgage is so <span>much more</span> than <span>just a rate</span></h1>
-                            <h3 class='Finding__subTitle'>Rates change, but every mortgage journey starts with a relationship.
+                            <h1 className='Finding__title'>Finding a mortgage is so <span>much more</span> than <span>just a rate</span></h1>
+                            <h3 className='Finding__subTitle'>Rates change, but every mortgage journey starts with a relationship.
                             (Pssst...it’s not just about clicking a button)</h3>
                         </div>
                         <div class ='Finding__subBlock'>
-                            <p class='Finding__subText'>Let us help you create
+                            <p className='Finding__subText'>Let us help you create
                             your mortgage journey</p>
-                            <button class='Finding__btn'>Get started</button>
-                            <button class='Finding__btn Finding__btn--white'>Schedule a time</button>
+                            <button className='Finding__btn'>Get started</button>
+                            <button className='Finding__btn Finding__btn--white'>Schedule a time</button>
                         </div>
 
                     </div>

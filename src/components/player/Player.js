@@ -29,8 +29,8 @@ const Player = ({videoId,getDuratiom}) =>{
     },[videoDuration])
     
     return(
-        <div class='Finding__play-video'>
-            <div class='Finding__video' ref={playerRef}></div>
+        <div className='Finding__play-video'>
+            <div className='Finding__video' ref={playerRef}></div>
             <img src={Preload} alt="" />
         </div>
     )
